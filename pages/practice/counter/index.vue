@@ -1,5 +1,3 @@
-import myButton from "~/compornents/myButton.vue"
-
 <template>
     <div>
         <div id="number-area">Count : {{ counter }}</div>
