@@ -1,0 +1,19 @@
+#number-area {
+    height: 150px;
+    font-size: 30px;
+    width: 100%;
+    line-height: 150px;
+    text-align: center;
+}
+
+#button-area {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 25px;
+    margin: auto 30px;
+    width: 200px;
+    height: 100px;
+}
