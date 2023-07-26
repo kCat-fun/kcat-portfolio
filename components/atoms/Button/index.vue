@@ -4,21 +4,6 @@
     </button>
 </template>
 
-<style scoped>
-#myButton {
-    background-color: var(--color);
-}
-
-#myButton:hover {
-    cursor: pointer;
-    background-color: var(--hoverColor);
-}
-
-#myButton {
-    font-size: 20px;
-}
-</style>
-
 <script>
 export default {
     name: 'MyButton',
@@ -39,9 +24,10 @@ export default {
             return {
                 '--color': this.color,
                 '--hoverColor': this.hoverColor,
-                text: this.text,
             }
         },
     }
 }
 </script>
+
+<style src="./index.css" scoped></style>

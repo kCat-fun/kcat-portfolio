@@ -1,0 +1,12 @@
+#myButton {
+    background-color: var(--color);
+}
+
+#myButton:hover {
+    cursor: pointer;
+    background-color: var(--hoverColor);
+}
+
+#myButton {
+    font-size: 20px;
+}
