@@ -2,8 +2,8 @@
     <div>
         <div id="number-area">Count : {{ counter }}</div>
         <div id="button-area">
-            <myButton color="#888" hoverColor="#444" class="button" @click="increment">increment</myButton>
-            <myButton color="#888" hoverColor="#444" class="button" @click="decrement">decrement</myButton>
+            <AtomsButton color="#888" hoverColor="#444" class="button" @click="increment">increment</AtomsButton>
+            <AtomsButton color="#888" hoverColor="#444" class="button" @click="decrement">decrement</AtomsButton>
         </div>
     </div>
 </template>
