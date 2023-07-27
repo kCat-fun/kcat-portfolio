@@ -1,12 +1,12 @@
 <template>
     <div>
-        <h1>practice page</h1>
+        <img src="~/assets/image/icon3d.jpg" alt="イメージ映像">
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Practice'
+    name: 'HomeTopMovie',
 }
 </script>
 

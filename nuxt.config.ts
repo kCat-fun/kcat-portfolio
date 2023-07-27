@@ -7,7 +7,8 @@ export default defineNuxtConfig({
       viewport: 'width=device-width',
       title: 'kCat\'s Portfolio',
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inter'},
+        { rel: 'icon', type: 'image/x-icon', href: '/icon.ico' },
       ],
       htmlAttrs: {
         lang: 'ja',
@@ -15,4 +16,13 @@ export default defineNuxtConfig({
       },
     }
   },
+  css: [
+    "~/assets/style/reset.css"
+  ],
+  components: [
+    {
+      path: "~/components/",
+      pathPrefix: false,
+    }
+  ],
 });

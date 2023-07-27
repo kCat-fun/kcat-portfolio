@@ -1,16 +1,12 @@
 <template>
     <header>
-        <nav>
-            <NuxtLink to="/">Home</NuxtLink>
-            <NuxtLink to="/practice">Practice</NuxtLink>
-            <NuxtLink to="/practice/counter">Counter</NuxtLink>
-        </nav>
+        <TitleAndLogo id="TitleAndLogo"></TitleAndLogo>
+        <HeaderNav id="HeaderNav"></HeaderNav>
     </header>
 </template>
 
 <script>
 export default {
-    name: 'Header',
 }
 </script>
 

@@ -1,6 +1,7 @@
 <template>
   <div>
-    <OrganismsHeader></OrganismsHeader>
+    <HeaderMargin></HeaderMargin>
+    <Header></Header>
     <main>
       <slot />
     </main>

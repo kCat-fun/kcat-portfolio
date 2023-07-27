@@ -1,5 +1,5 @@
 <template>
-    <button id="myButton" :style="bgColor">
+    <button :style="bgColor">
         <slot></slot>
     </button>
 </template>
