@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="counter">
         <div id="number-area">Count : {{ counter }}</div>
         <div id="button-area">
             <Button color="#888" hoverColor="#444" class="button" @click="increment">increment</Button>

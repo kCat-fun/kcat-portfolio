@@ -1,3 +1,8 @@
+#counter {
+    background-color: aliceblue;
+    height: calc(100vh - 100px);
+}
+
 #number-area {
     height: 150px;
     font-size: 30px;

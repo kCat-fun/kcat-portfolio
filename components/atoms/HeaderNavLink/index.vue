@@ -22,13 +22,19 @@ export default {
             type: String,
             required: false,
             default: "#000"
-        }
+        },
+        width: {
+            type: String,
+            required: false,
+            default: "150px",
+        },
     },
     computed: {
         bgColor() {
             return {
                 '--color': this.color,
                 '--textColor': this.textColor,
+                '--width': this.width,
             }
         },
     }

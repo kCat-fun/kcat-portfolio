@@ -3,7 +3,7 @@
         <HeaderNavLink path="/About">About</HeaderNavLink>
         <HeaderNavLink path="/Activity">Activity</HeaderNavLink>
         <HeaderNavLink path="/Blog">Blog</HeaderNavLink>
-        <HeaderNavLink path="/Contact" color="#52B5A3" textColor="#FBFBFB">Contact</HeaderNavLink>
+        <HeaderNavLink path="/Contact" color="#52B5A3" textColor="#FBFBFB" width="200px">Contact</HeaderNavLink>
     </nav>
 </template>
 

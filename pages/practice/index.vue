@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>practice page</h1>
+        <nuxtLink to="practice/counter">カウンター</nuxtLink>
     </div>
 </template>
 

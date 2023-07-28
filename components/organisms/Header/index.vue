@@ -1,8 +1,11 @@
 <template>
-    <header>
-        <TitleAndLogo id="TitleAndLogo"></TitleAndLogo>
-        <HeaderNav id="HeaderNav"></HeaderNav>
-    </header>
+    <div id="warap">
+        <HeaderMargin id="headerMargin"></HeaderMargin>
+        <header>
+            <TitleAndLogo id="TitleAndLogo"></TitleAndLogo>
+            <HeaderNav id="HeaderNav"></HeaderNav>
+        </header>
+    </div>
 </template>
 
 <script>
