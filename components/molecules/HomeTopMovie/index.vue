@@ -1,6 +1,5 @@
 <template>
     <div>
-        <img src="~/assets/image/icon3d.jpg" alt="イメージ映像">
     </div>
 </template>
 
