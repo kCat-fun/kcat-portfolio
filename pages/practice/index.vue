@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <main>
         <h1>practice page</h1>
         <nuxtLink to="practice/counter">カウンター</nuxtLink>
-    </div>
+    </main>
 </template>
 
 <script>

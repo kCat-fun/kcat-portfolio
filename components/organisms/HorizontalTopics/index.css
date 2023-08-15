@@ -1,0 +1,28 @@
+p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#content-area {
+    margin: -40px auto;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#content-area>* {
+    margin-left: 40px;
+    flex-shrink: 0;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+#buttons-area {
+    position: relative;
+    display: flex;
+    top: 220px;
+    padding: 0 15px;
+    justify-content: space-between;
+}

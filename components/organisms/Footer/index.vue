@@ -1,12 +1,12 @@
 <template>
-    <main>
-        
-    </main>
+    <div>
+        <p>©copyright kCat</p>
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'Blog',
+    name: 'Footer',
 }
 </script>
 

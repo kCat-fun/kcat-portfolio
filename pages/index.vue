@@ -1,6 +1,8 @@
 <template>
     <main>
         <HomeTopMovie></HomeTopMovie>
+        <HorizontalTopics class="horizon-topics">NEW CONTENTS</HorizontalTopics>
+        <HorizontalTopics class="horizon-topics">EVENT</HorizontalTopics>
     </main>
 </template>
 

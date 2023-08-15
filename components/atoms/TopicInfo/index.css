@@ -1,0 +1,23 @@
+#topic-info {
+    width: calc(100% - 10px);
+    margin: 0;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#tag {
+    width: 80px;
+    padding: 5px 10px;
+    background: #231D4A;
+    color: var(--lightText);
+    text-align: center;
+    border-radius: 15px;
+}
+
+#date {
+    padding: 5px 0;
+}
