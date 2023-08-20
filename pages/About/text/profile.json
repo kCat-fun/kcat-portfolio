@@ -1,0 +1,68 @@
+{
+    "infomations": [{
+            "key": "Name",
+            "value": "Kaneko Koichi"
+        },
+        {
+            "key": "氏名",
+            "value": "金子康一"
+        },
+        {
+            "key": "ニックネーム",
+            "value": "kCat"
+        },
+        {
+            "key": "Twitter/X",
+            "value": "<a href=\"https://twitter.com/kcat_fun\" target=\"blank\" style=\"color: #00bfff; text-decoration: none;\">@kcat_fun</a>"
+        },
+        {
+            "key": "所属",
+            "value": "公立はこだて未来大学<br />知能システムコース２年"
+        },
+        {
+            "key": "生年月",
+            "value": "2004年1月 （26卒）"
+        },
+        {
+            "key": "趣味",
+            "value": "ロボット, WEBフロント"
+        }
+    ],
+    "comment": {
+        "title": "Comment",
+        "text": "コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。コメントをここに書きます。"
+    },
+    "circle": {
+        "title": "Circle",
+        "text": "<b>＜代表＞</b><br />ハードウェア, 未来工房, ARTiS<br /><b>＜副代表＞</b><br />FUNAI, FUGU, 天文部<br /><b>＜部員＞</b><br />Mariners' Conference, FUN3D, FUNCoder, SoundCreate, 上級生員会, GATT, 麻雀, FUN POKER, 卓球, (etrobo-fun）"
+    },
+    "skills": {
+        "title": "Skills",
+        "text": [
+            "HTML/CSS",
+            "JavaScript (Vue.js, Nuxt.js, p5.js)",
+            "Processing",
+            "Python",
+            "vbs",
+            "C# (.NET Framework)",
+            "Robot C",
+            "LEGO MINDSTORMS EV3",
+            "Arduino, ESP32",
+            "Aviutl (動画編集)",
+            "YMM3,4 (ゆっくりムービーメーカー)",
+            "NEUTRINO (ボカロ生成)",
+            "Fusion360 (CAD)",
+            "タイピング",
+            "Microsoft Office"
+        ]
+    },
+    "license": {
+        "title": "License",
+        "text": [
+            "第二種電気工事士",
+            "ウェブデザイン技能検定3級",
+            "P検2級",
+            "パソコンスピード認定試験1級"
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+.TitleBar {
+    margin: 15px 0 30px 0;
+}
+
+#IntroBox {
+    --marginLeft: 5px;
+}
+
+#IntroBox p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: var(--marginLeft);
+}
+
+#contents {
+    margin-left: var(--marginLeft);
+}

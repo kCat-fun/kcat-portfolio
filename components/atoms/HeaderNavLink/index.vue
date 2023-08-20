@@ -23,6 +23,11 @@ export default {
             required: false,
             default: "#000"
         },
+        textHoverColor: {
+            type: String,
+            required: false,
+            default: "#555"
+        },
         width: {
             type: String,
             required: false,
@@ -34,6 +39,7 @@ export default {
             return {
                 '--color': this.color,
                 '--textColor': this.textColor,
+                '--textHoverColor': this.textHoverColor,
                 '--width': this.width,
             }
         },

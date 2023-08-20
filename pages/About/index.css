@@ -1,3 +1,100 @@
 main {
-    min-height: 1500px;
+    padding: 50px 30px 30px 30px;
+}
+
+#profile {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile .IntroBox {
+    width: 65%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+#imgBox {
+    width: auto;
+    height: 300px;
+    margin-right: 10px;
+}
+
+#imgBox img {
+    width: auto;
+    height: 100%;
+}
+
+#profileList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profileItmes {
+    display: flex;
+}
+
+.key {
+    width: 110px;
+}
+
+.value {
+    margin-left: 10px;
+}
+
+.introductions {
+    margin: 50px auto;
+}
+
+.introBoxs {
+    margin: 50px auto;
+}
+
+.introBoxs ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.introBoxs {
+    line-height: 30px;
+}
+
+@media screen and (min-width: 960px) {
+    main {
+        padding: 50px 100px 30px 100px;
+    }
+    .value {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 50px 10px 30px 10px;
+    }
+    .value {
+        margin-left: 0;
+    }
+    #profile .IntroBox {
+        width: 100%;
+        margin: auto;
+    }
+    .IntroBoxs {
+        margin: auto;
+        width: 100%;
+    }
+    #profile {
+        display: block;
+        margin: 0;
+        height: auto;
+    }
+    #imgBox {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
 }
