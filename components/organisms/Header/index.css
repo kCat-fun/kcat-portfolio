@@ -28,3 +28,7 @@ header {
 #headerMargin {
     height: var(--height);
 }
+
+.HamburgerMenu {
+    margin: auto 10px auto auto;
+}

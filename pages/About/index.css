@@ -1,5 +1,5 @@
 main {
-    padding: 50px 30px 30px 30px;
+    padding: 50px 100px 30px 100px;
 }
 
 #profile {
@@ -63,9 +63,9 @@ main {
     line-height: 30px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) {
     main {
-        padding: 50px 100px 30px 100px;
+        padding: 50px 50px 30px 50px;
     }
     .value {
         margin-left: 0;

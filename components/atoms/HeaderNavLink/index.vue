@@ -31,7 +31,7 @@ export default {
         width: {
             type: String,
             required: false,
-            default: "150px",
+            default: "130px",
         },
     },
     computed: {

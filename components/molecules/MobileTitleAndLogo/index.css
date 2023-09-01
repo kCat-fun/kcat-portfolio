@@ -1,0 +1,21 @@
+#TitleAndLogo * {
+    text-decoration: none;
+    color: black;
+}
+
+#title-logo {
+    display: flex;
+    height: 100%;
+}
+
+img {
+    width: auto;
+    height: 80%;
+    margin: auto;
+}
+
+#title {
+    margin: auto 10px;
+    font-size: 25px;
+    line-height: 30px;
+}
