@@ -1,16 +1,9 @@
 <template>
     <div>
         <p>- <slot></slot> -</p>
-        <div id="buttons-area">
-            <TriangleButton class="trig-button" @click="test">◀</TriangleButton>
-            <TriangleButton class="trig-button" @click="test">▶</TriangleButton>
-        </div>
-        <div id="content-area">
-            <TopicBox tag="tag" date="2023/7/31">説明文をここに表示します。説明文をここに表示します。説明文をここに表示します。</TopicBox>
-            <TopicBox tag="tag" date="2023/7/31">説明文をここに表示します。説明文をここに表示します。説明文をここに表示します。</TopicBox>
-            <TopicBox tag="tag" date="2023/7/31">説明文をここに表示します。説明文をここに表示します。説明文をここに表示します。</TopicBox>
-            <TopicBox tag="tag" date="2023/7/31">説明文をここに表示します。説明文をここに表示します。説明文をここに表示します。</TopicBox>
-        </div>
+        <SliderBox idName="newContentId">
+            <TopicBox tag="tag1" :date="'2023/11/'+(i+1)" v-for="i in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" style="margin-left: 20px;flex-shrink: 0;">説明文をここに表示します。説明文をここに表示します。説明文をここに表示します。</TopicBox>
+        </SliderBox>
     </div>
 </template>
 
@@ -18,7 +11,7 @@
 export default {
     name: 'HorizontalTopic',
     methods : {
-        test() {
+        onClick() {
             console.log("click");
         },
     }

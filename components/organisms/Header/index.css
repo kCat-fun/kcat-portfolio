@@ -12,23 +12,44 @@ header {
     background-color: #FCFCFC;
 }
 
-#TitleAndLogo {
+header::after {
+    /* 疑似要素で同じ大きさのboxを作り、position: absoluteで背面に表示 */
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* ①疑似要素のボックスを影色で塗りつぶし */
+    background-color: #FCFCFC;
+    /* ②ブラーフィルターでぼかす */
+    filter: blur(10px);
+    /* ③位置やサイズを調整 */
+    transform: translateY(5px) scale(1.1);
+    /* ④乗算で重ねる */
+    mix-blend-mode: multiply;
+}
+
+.titleAndLogo,
+.mobileTitleAndLogo {
     width: auto;
     height: 100%;
     margin: auto 10px;
 }
 
-#HeaderNav {
+.headerNav {
     display: flex;
     width: auto;
     height: 100%;
     margin: auto 0 auto auto;
 }
 
-#headerMargin {
+.headerMargin {
     height: var(--height);
 }
 
-.HamburgerMenu {
+.hamburgerMenu {
     margin: auto 10px auto auto;
 }

@@ -1,8 +1,9 @@
 <template>
     <main>
-        <HomeTopMovie></HomeTopMovie>
+        <HomeTopMovie />
         <HorizontalTopics class="horizon-topics">NEW CONTENTS</HorizontalTopics>
-        <HorizontalTopics class="horizon-topics">EVENT</HorizontalTopics>
+        <RecentPost class="horizon-topics">RECENT POST</RecentPost>
+        <MyLinks class="horizon-topics">Links</MyLinks>
     </main>
 </template>
 

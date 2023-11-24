@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>©copyright kCat</p>
+        <p>Copyright © kCat All Rights Reserved.</p>
     </div>
 </template>
 

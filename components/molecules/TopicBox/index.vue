@@ -1,9 +1,11 @@
 <template>
     <div>
-        <img src="~/assets/image/testCaseImg.jpg" alt="説明画像">
-        <TopicInfo :tag=tag :date=date>
-            <slot></slot>
-        </TopicInfo>
+        <a href="#">
+            <img src="~/assets/image/testCaseImg.jpg" alt="説明画像">
+            <TopicInfo :tag=tag :date=date>
+                <slot></slot>
+            </TopicInfo>
+        </a>
     </div>
 </template>
 

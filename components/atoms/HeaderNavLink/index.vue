@@ -26,7 +26,7 @@ export default {
         textHoverColor: {
             type: String,
             required: false,
-            default: "#555"
+            default: "#888"
         },
         width: {
             type: String,

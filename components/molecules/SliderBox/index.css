@@ -1,0 +1,31 @@
+.content-area {
+    z-index: 1;
+    margin: -40px auto;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    /*スクロールバー非表示（IE・Edge）*/
+    -ms-overflow-style: none;
+    /*スクロールバー非表示（Firefox）*/
+    scrollbar-width: none;
+}
+
+.buttons-area {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    top: 220px;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+
+/*スクロールバー非表示（Chrome・Safari）*/
+
+.content-area::-webkit-scrollbar {
+    display: none;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}

@@ -1,29 +1,33 @@
 <template>
     <div id="warap">
-        <HeaderMargin id="headerMargin"></HeaderMargin>
-        <header v-if="windowWidth < 800">
-            <MobileTitleAndLogo id="TitleAndLogo" />
-            <HamburgerMenu class="HamburgerMenu" />
+        <HeaderMargin />
+        <header v-if="windowWidth < breakPoint">
+            <MobileTitleAndLogo class="mobileTitleAndLogo" />
+            <HamburgerMenu class="hamburgerMenu" />
         </header>
         <header v-else>
-            <TitleAndLogo id="TitleAndLogo" />
-            <HeaderNav id="HeaderNav" />
+            <TitleAndLogo class="titleAndLogo" />
+            <HeaderNav class="headerNav" />
         </header>
     </div>
 </template>
 
 <script>
+import Constant from '~/assets/script/constant.js';
+
 export default {
     name: 'Header',
 
     data: () => {
         return {
-            windowWidth: ''
+            windowWidth: '',
+            breakPoint: Constant.BREAK_POINT,
         }
     },
     mounted() {
         window.addEventListener('resize', this.resizeWindow)
         this.windowWidth = window.innerWidth
+        console.log(this.breakPoint)
     },
     methods: {  
         resizeWindow() {

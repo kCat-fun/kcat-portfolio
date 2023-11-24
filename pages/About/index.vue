@@ -1,5 +1,6 @@
 <template>
     <main>
+        <PageTitle>About</PageTitle>
         <div id="profile">
             <div id="imgBox">
                 <img src="~/assets/image/iconCircle.png" alt="">

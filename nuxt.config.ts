@@ -13,7 +13,8 @@ export default defineNuxtConfig({
           content:
             "\
             kCatのポートフォリオサイトです。ロボットやウェブ開発などが主な活動です。\n\
-            公立はこだて未来大学 知能システムコース2年に所属しています。\
+            公立はこだて未来大学 知能システムコース2年に所属しています。\n\
+            今までに作成した作品や書いてきたBlogのまとめなどを掲載しています。\
             ",
         },
       ],
@@ -28,17 +29,41 @@ export default defineNuxtConfig({
           href: "/icon.ico",
         },
       ],
+      script: [
+        {
+          hid: "twitter",
+          type: "text/javascript",
+          src: "https://platform.twitter.com/widgets.js",
+          async: true,
+          defer: true,
+          body: true,
+        },
+        {
+          type: "text/javascript",
+          src: "https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js",
+        },
+      ],
       htmlAttrs: {
         lang: "ja",
         prefix: "og: https://ogp.me/ns#",
       },
     },
   },
-  css: ["~/assets/style/reset.css"],
+  css: [
+    "~/assets/style/reset.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
   components: [
     {
       path: "~/components/",
       pathPrefix: false,
     },
   ],
+  build: {
+    transpile: [
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-solid-svg-icons",
+      "@fortawesome/vue-fontawesome",
+    ],
+  },
 });

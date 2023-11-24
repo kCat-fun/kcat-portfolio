@@ -1,6 +1,8 @@
 <template>
     <div id="button">
-        <div v-for="i in 3" :key="n" class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
 </template>
 

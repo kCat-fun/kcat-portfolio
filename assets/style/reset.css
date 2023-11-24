@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'Inter';
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
     font-size: 18px;
 }
 
@@ -9,4 +9,5 @@ main {
     --darkText: #312F2F;
     --lightText: #EFEFEF;
     color: var(--darkText);
+    min-height: calc(100vh - 150px);
 }

@@ -1,8 +1,8 @@
 <template>
     <div id="topic-info">
         <div id="info">
-            <div id="tag">{{ tag }}</div>
-            <div id="date">{{ date }}</div>
+            <Tag>{{ tag }}</Tag>
+            <Date>{{ date }}</Date>
         </div>
         <p id="context">
             <slot></slot>

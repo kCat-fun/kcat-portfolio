@@ -1,0 +1,26 @@
+a>* {
+    width: 300px;
+    color: black;
+}
+
+img {
+    height: 250px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration-line: none;
+    height: 350px;
+}
+
+.title {
+    margin: 5px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+}

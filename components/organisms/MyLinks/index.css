@@ -1,0 +1,24 @@
+p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.links-area {
+    display: flex;
+    justify-content: center;
+}
+
+.links-box {
+    margin: 30px 65px 0 65px;
+    height: 150px;
+}
+
+.links-box>div {
+    width: auto;
+    height: 150px;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
