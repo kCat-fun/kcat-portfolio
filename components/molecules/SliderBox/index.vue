@@ -22,15 +22,29 @@ export default {
     },
     data: () => {
         return {
+            windowWidth: 0,
+            slideDist: 440,
             slideCount: 0,
         }
     },
+    mounted() {
+        window.addEventListener('resize', this.resizeWindow);
+        this.windowWidth = window.innerWidth;
+        this.slideDist = this.setslideDist();
+    },
     methods: {
+        setslideDist() {
+            return (this.windowWidth < 500 ? this.windowWidth * 0.915 : 440);
+        },
+        resizeWindow() {
+            this.windowWidth = window.innerWidth;
+            this.slideDist = this.setslideDist();
+        },
         onClickRight() {
             // console.log("click");
-            this.slideCount = this.slideCount + 1 <= (screen.width / 440 + 4) ? this.slideCount + 1 : this.slideCount;
+            this.slideCount = this.slideCount + 1 <= (10 - Math.floor(this.windowWidth/this.slideDist)) ? this.slideCount + 1 : this.slideCount;
             document.getElementById(this.idName).scroll({
-                left: this.slideCount * 440,
+                left: this.slideCount * this.slideDist,
                 top: 0,
                 behavior: "smooth",
             });
@@ -39,7 +53,7 @@ export default {
             // console.log("click");
             this.slideCount = this.slideCount - 1 >= 0 ? this.slideCount - 1 : this.slideCount;
             document.getElementById(this.idName).scroll({
-                left: this.slideCount * 440,
+                left: this.slideCount * this.slideDist,
                 top: 0,
                 behavior: "smooth",
             });
@@ -48,4 +62,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css";
+</style>

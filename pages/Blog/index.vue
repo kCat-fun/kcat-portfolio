@@ -1,10 +1,11 @@
 <template>
-    <main>
+    <div class="main">
         <PageTitle>Blog</PageTitle>
+        <p>※スマホ表示だとデザインが崩れます。すみません。現在修正中...</p>
         <div>
-            <BlogBox v-for="blog in blogs" :tags='blog.tag' :date="blog.data" :synopsis="blog.context" :imgPath="blog.image" :url="blog.url" altStr="ブログ画像">{{blog.title}}</BlogBox>
+            <BlogBox class="BlogBlox" v-for="blog in blogs" :title="blog.title" :tags='blog.tag' :date="blog.data" :synopsis="blog.context" :imgPath="blog.image" :url="blog.url" altStr="ブログ画像" />
         </div>
-    </main>
+    </div>
 </template>
 
 <script>
@@ -12,6 +13,7 @@ export default {
     name: 'Blog',
     data: () => {
         return {
+            ctx: useRuntimeConfig().public,
             blogs: "",
         }
     },
@@ -21,7 +23,7 @@ export default {
     methods: {
         doGet() {
             fetch(
-                "https://script.google.com/macros/s/AKfycby_JXJTBTazUIr9x-eqKeN2_Ws1vUnsBd_mA1MxNtxXUzfaSaFCPALQlkyvjYfw_BtFMw/exec?p=Blog", {
+                this.ctx.blogToken, {
                 method: "GET",
                 header: {
                     "Content-Type": "application/json",
@@ -31,7 +33,7 @@ export default {
             ).then((response) => response.json())
                 .then((data) => {
                     this.blogs = data;
-                    console.log(this.blogs);
+                    // console.log(this.blogs);
                     for (let i = 0; i < this.blogs.length; i++) {
                         this.blogs[i].tag = this.blogs[i].tag.split(',');
                     }
@@ -41,4 +43,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css"; 
+</style>

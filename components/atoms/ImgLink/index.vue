@@ -1,7 +1,9 @@
 <template>
-    <a :href=link target="blank">
-        <slot />
-    </a>
+    <div>
+        <a :href="link" target="blank">
+            <slot />
+        </a>
+    </div>
 </template>
 
 <script>
@@ -12,9 +14,7 @@ export default {
             type: String,
             required: false,
             default: "#",
-        }
+        },
     }
 }
 </script>
-
-<style src="./index.css" scoped />

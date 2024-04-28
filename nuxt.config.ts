@@ -1,3 +1,5 @@
+const { BASE_URL, API_KEY, BLOG_TOKEN, TWITTER_IDS } = process.env;
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -47,6 +49,14 @@ export default defineNuxtConfig({
         lang: "ja",
         prefix: "og: https://ogp.me/ns#",
       },
+    },
+  },
+  runtimeConfig: {
+    public: {
+      baseURL: BASE_URL,
+      apiKey: API_KEY,
+      blogToken: BLOG_TOKEN,
+      twitterIds: TWITTER_IDS,
     },
   },
   css: [

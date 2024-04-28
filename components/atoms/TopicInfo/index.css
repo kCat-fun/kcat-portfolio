@@ -1,5 +1,5 @@
 #topic-info {
-    width: calc(100% - 10px);
+    width: 90%;
     margin: 0;
 }
 
@@ -7,4 +7,10 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+}
+
+@media screen and (min-width: 500px) {
+    #topic-info {
+        width: calc(100% - 10px);
+    }
 }

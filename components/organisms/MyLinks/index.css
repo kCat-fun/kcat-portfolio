@@ -5,20 +5,23 @@ p {
 
 .links-area {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .links-box {
-    margin: 30px 65px 0 65px;
-    height: 150px;
-}
-
-.links-box>div {
-    width: auto;
+    margin: 30px min(65px, 5%) 0 min(65px, 5%);
     height: 150px;
 }
 
 img {
     width: auto;
-    height: 100%;
+    height: 60%;
+}
+
+@media screen and (min-width: 500px) {
+    img {
+        width: auto;
+        height: 150px;
+    }
 }

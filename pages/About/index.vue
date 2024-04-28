@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <div class="About">
         <PageTitle>About</PageTitle>
         <div id="profile">
             <div id="imgBox">
@@ -17,9 +17,9 @@
             </IntroBox>
         </div>
         <div class="introductions">
-            <IntroBox :title=jsonProfile.comment.title class="introBoxs">
+            <!-- <IntroBox :title=jsonProfile.comment.title class="introBoxs">
                 <p v-html="jsonProfile.comment.text" />
-            </IntroBox>
+            </IntroBox> -->
             <IntroBox :title=jsonProfile.circle.title class="introBoxs">
                 <p v-html="jsonProfile.circle.text" />
             </IntroBox>
@@ -38,7 +38,7 @@
                 </ul>
             </IntroBox>
         </div>
-    </main>
+    </div>
 </template>
 
 <script>
@@ -54,4 +54,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css"; 
+</style>

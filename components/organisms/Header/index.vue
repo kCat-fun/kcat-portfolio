@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Constant from '~/assets/script/constant.js';
+import Constant from '~/assets/script/constant.json';
 
 export default {
     name: 'Header',
@@ -25,16 +25,17 @@ export default {
         }
     },
     mounted() {
-        window.addEventListener('resize', this.resizeWindow)
-        this.windowWidth = window.innerWidth
-        console.log(this.breakPoint)
+        window.addEventListener('resize', this.resizeWindow);
+        this.windowWidth = window.innerWidth;
     },
     methods: {  
         resizeWindow() {
-            this.windowWidth = window.innerWidth
+            this.windowWidth = window.innerWidth;
         }
     }
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css";
+</style>

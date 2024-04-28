@@ -1,23 +1,47 @@
 <template>
-    <main>
+    <div>
         <PageTitle>Activity</PageTitle>
         <div>
-            <WorkBox tag="tag" data="2023/xx/xx" imgPath="https://drive.google.com/uc?export=view&id=1T7O9ES7d4oZY-O_hUYgET5lysJ8FcfJH" altStr="test">WorkTitle</WorkBox>
-            <WorkBox tag="tag" data="2023/xx/xx" imgPath="https://drive.google.com/uc?export=view&id=1T7O9ES7d4oZY-O_hUYgET5lysJ8FcfJH" altStr="test">WorkTitle</WorkBox>
-            <WorkBox tag="tag" data="2023/xx/xx" imgPath="https://drive.google.com/uc?export=view&id=1T7O9ES7d4oZY-O_hUYgET5lysJ8FcfJH" altStr="test">WorkTitle</WorkBox>
-            <WorkBox tag="tag" data="2023/xx/xx" imgPath="https://drive.google.com/uc?export=view&id=1T7O9ES7d4oZY-O_hUYgET5lysJ8FcfJH" altStr="test">WorkTitle</WorkBox>
-            <WorkBox tag="tag" data="2023/xx/xx" imgPath="https://drive.google.com/uc?export=view&id=1T7O9ES7d4oZY-O_hUYgET5lysJ8FcfJH" altStr="test">WorkTitle</WorkBox>
-            <WorkBoxDammy/>
-            <WorkBoxDammy/>
-            <WorkBoxDammy/>
+            <WorkBox v-for="activity in activities.contents" class="WorkBox" @click="moveContent(activity.id)" :tag="activity.tag" :data="activity.data"
+                :imgPath="activity.image.url" altStr="タイトル画像">
+                {{ activity.title }}
+            </WorkBox>
+            <WorkBoxDammy class="WorkBox" />
+            <WorkBoxDammy class="WorkBox" />
+            <WorkBoxDammy class="WorkBox" />
         </div>
-    </main>
+    </div>
 </template>
 
 <script>
 export default {
     name: 'Activity',
+    data: () => {
+        return {
+            ctx: useRuntimeConfig().public,
+            activities: {},
+        }
+    },
+    mounted() {
+        // console.log(this.ctx);
+        fetch(this.ctx.baseURL, {
+            headers: {
+                "X-MICROCMS-API-KEY": this.ctx.apiKey
+            }
+        }).then(res => res.json())
+            .then(json => {
+                console.log(json);
+                this.activities = json;
+            });
+    },
+    methods: {
+        moveContent(prop) {
+            this.$router.push({ path: '/Activity/Content' , query :{ id: prop}});
+        }
+    }
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css";
+</style>

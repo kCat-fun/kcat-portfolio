@@ -1,5 +1,11 @@
-main {
-    padding: 100px 100px 10px 100px;
+.About {
+    padding: 0 80px;
+}
+
+@media screen and (max-width: 500px) {
+    .About {
+        padding: 0 20px;
+    }
 }
 
 #profile {

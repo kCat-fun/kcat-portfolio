@@ -1,3 +1,14 @@
-main {
-    padding: 100px 0 10px 0;
+.BlogBox {
+    margin: auto;
+    transition: 0.1s ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+    .BlogBox:hover {
+        transform: translateX(10px);
+    }
+}
+
+.BlogBox:not(:first-child) {
+    margin-top: 20px;
 }

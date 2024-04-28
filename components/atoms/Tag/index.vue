@@ -10,4 +10,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped />
+<style scoped>
+@import "./index.css";
+</style>

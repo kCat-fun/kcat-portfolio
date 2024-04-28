@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <div class="Contact">
         <PageTitle>Contact</PageTitle>
         <div class="inquiry-forms">
             <div class="forms">
@@ -16,7 +16,7 @@
             </div>
             <div class="button" :onclick=send>送信</div>
         </div>
-    </main>
+    </div>
 </template>
 
 <script>
@@ -64,4 +64,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css"; 
+</style>

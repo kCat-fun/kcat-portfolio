@@ -1,6 +1,13 @@
 div {
-    --width: 420px;
+    --width: 90%;
     width: var(--width);
+    margin: auto;
+}
+
+@media screen and (min-width: 500px) {
+    div {
+        --width: 420px;
+    }
 }
 
 img {

@@ -1,16 +1,19 @@
 <template>
-    <main>
+    <div>
         <HomeTopMovie />
-        <HorizontalTopics class="horizon-topics">NEW CONTENTS</HorizontalTopics>
-        <RecentPost class="horizon-topics">RECENT POST</RecentPost>
+        <TopIntro />
+        <!-- <HorizontalTopics class="horizon-topics">NEW CONTENTS</HorizontalTopics>
+        <RecentPost class="horizon-topics">RECENT POST</RecentPost> -->
         <MyLinks class="horizon-topics">Links</MyLinks>
-    </main>
+    </div>
 </template>
 
 <script>
 export default {
-    name: 'Home',
+    name: 'Top',
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css";
+</style>

@@ -1,15 +1,12 @@
-main {
-    padding: 100px 100px 10px 100px;
-}
-
 div {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     max-width: 1280px;
     margin: auto;
 }
 
-div>* {
-    margin: 20px 0;
+.WorkBox {
+    margin: 25px;
 }

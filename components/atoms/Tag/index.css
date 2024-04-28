@@ -9,4 +9,6 @@ span {
     font-size: 12px;
     color: white;
     background-color: #231D4A;
+    flex-shrink: 0;
+    white-space: nowrap;
 }

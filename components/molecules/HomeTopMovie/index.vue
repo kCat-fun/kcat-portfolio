@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="movie"></div>
     </div>
 </template>
 
@@ -9,4 +10,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css";
+</style>

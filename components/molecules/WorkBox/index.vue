@@ -34,8 +34,10 @@ export default {
             require: false,
             default: "Image"
         }
-    },
+    }
 }
 </script>
 
-<styel src="./index.css" scoped></styel>
+<style scoped>
+@import "./index.css";
+</style>

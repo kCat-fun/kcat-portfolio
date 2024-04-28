@@ -1,12 +1,12 @@
 #warap {
-    --d: 100px;
+    --d: 50px;
 }
 
 #button {
     width: var(--d);
     height: var(--d);
     line-height: var(--d);
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     background-color: #F3F2CCDA;
     border-radius: 50%;
@@ -19,4 +19,13 @@
     transition: background-color 0.1s ease-out;
     box-shadow: 0px 2px #0005;
     cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    #warap {
+        --d: 100px;
+    }
+    #button {
+        font-size: 40px;
+    }
 }

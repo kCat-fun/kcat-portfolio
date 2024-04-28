@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Copyright © kCat All Rights Reserved.</p>
+        <span>Copyright © kCat All Rights Reserved.</span>
     </div>
 </template>
 
@@ -10,4 +10,6 @@ export default {
 }
 </script>
 
-<style src="./index.css" scoped></style>
+<style scoped>
+@import "./index.css";
+</style>
