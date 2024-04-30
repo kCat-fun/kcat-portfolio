@@ -2,8 +2,7 @@
     <div>
         <div :class="[isClick ? 'cross-button' : 'hambuger-button', 'button']" @click="isClick = !isClick">
             <div class="bar"></div>
-            <div class="bar" v-if="!isClick"></div>
-            <div class="dammy-bar" v-else></div>
+            <div :class="isClick ? 'dammy-bar' : 'bar2'"></div>
             <div class="bar"></div>
         </div>
     </div>
