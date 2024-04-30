@@ -10,7 +10,6 @@
         text-decoration: none;
         color: var(--darkText);
         overflow: hidden;
-        transition: 0.2s ease-in-out;
     }
     .mobile {
         margin: 20px auto;
@@ -31,14 +30,15 @@
         text-decoration: none;
         color: var(--darkText);
         overflow: hidden;
+        transition: 0.2s ease-in-out;
     }
     .pc {
         margin: 20px auto;
     }
-}
-
-.BlogBox:hover {
-    background-color: #BBB;
+    .pc>.BlogBox:hover {
+        background-color: #BBB;
+        transform: translateX(20px);
+    }
 }
 
 .image {
