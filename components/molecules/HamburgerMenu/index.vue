@@ -6,7 +6,7 @@
             <div class="bar"></div>
         </div>
     </div>
-    <div class="menu" v-if="isClick" @click="isClick = false">
+    <div :class="[isClick ? 'menu-open' : 'menu-close', 'menu']" v-if="isClick" @click="isClick = false">
         <ul>
             <li>
                 <NuxtLink class="link" to="/">Top</NuxtLink>
