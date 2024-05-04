@@ -3,7 +3,10 @@
     transition: 0.1s ease-in-out;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
+    .Blog {
+        padding: 0 50px 20px 50px;
+    }
     .BlogBox:hover {
         transform: translateX(10px);
     }
