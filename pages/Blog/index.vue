@@ -1,7 +1,6 @@
 <template>
-    <div class="main">
+    <div class="Blog">
         <PageTitle>Blog</PageTitle>
-        <p>※スマホ表示だとデザインが崩れます。すみません。現在修正中...</p>
         <div>
             <BlogBox class="BlogBlox" v-for="blog in blogs" :title="blog.title" :tags='blog.tag' :date="blog.data" :synopsis="blog.context" :imgPath="blog.image" :url="blog.url" altStr="ブログ画像" />
         </div>

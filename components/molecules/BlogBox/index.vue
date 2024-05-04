@@ -104,30 +104,28 @@ export default {
 
             //CSSプロパティを取得
             const sample = document.getElementsByClassName("title");
-            if (width <= 800) {
-                this.titleStr = this.title;
+
+            var style = window.getComputedStyle(sample[0]);
+            var fontsize = parseFloat(style.fontSize); //font-sizeを取得
+            var width = parseFloat(style.width); //widthを取得
+            var letterSpacing = parseFloat(style.letterSpacing); //letter-spacingを取得
+
+            width = window.innerWidth < 800 ? 300 * 0.95 : width;
+
+            // 収まる文字数を計算
+            var wordCount = Math.floor(width / fontsize) * row;
+
+            // letter-spacingも含めて計算する場合
+            // var wordCount = Math.floor(width / (fontsize + letterSpacing)) * row;
+
+            // 文字数を超えたら
+            if (this.titleStr.length > wordCount) {
+                const str = this.title.substr(0, (wordCount - 1)); //1文字削る
+                this.titleStr = str + clamp; //文末にテキストを足す
             }
             else {
-                var style = window.getComputedStyle(sample[0]);
-                var fontsize = parseFloat(style.fontSize); //font-sizeを取得
-                var width = parseFloat(style.width); //widthを取得
-                var letterSpacing = parseFloat(style.letterSpacing); //letter-spacingを取得
-
-                // 収まる文字数を計算
-                var wordCount = Math.floor(width / fontsize) * row;
-
-                // letter-spacingも含めて計算する場合
-                // var wordCount = Math.floor(width / (fontsize + letterSpacing)) * row;
-
-                // 文字数を超えたら
-                if (this.titleStr.length > wordCount) {
-                    const str = this.title.substr(0, (wordCount - 1)); //1文字削る
-                    this.titleStr = str + clamp; //文末にテキストを足す
-                }
-                else {
-                    const str = this.title.substr(0, (wordCount - 1)); //1文字削る
-                    this.titleStr = str + (this.titleStr.length >= this.title.length ? '' : clamp);
-                }
+                const str = this.title.substr(0, (wordCount - 1)); //1文字削る
+                this.titleStr = str + (this.titleStr.length >= this.title.length ? '' : clamp);
             }
         },
         synopsisTrim() {
@@ -144,8 +142,12 @@ export default {
             var width = parseFloat(style.width); //widthを取得
             var letterSpacing = parseFloat(style.letterSpacing); //letter-spacingを取得
 
+            width = window.innerWidth < 800 ? 300 * 0.95 : width;
+
             // 収まる文字数を計算
             var wordCount = Math.floor(width / fontsize) * row;
+
+
 
             // letter-spacingも含めて計算する場合
             // var wordCount = Math.floor(width / (fontsize + letterSpacing)) * row;
