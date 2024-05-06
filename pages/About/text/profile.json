@@ -34,7 +34,80 @@
     },
     "circle": {
         "title": "Circle",
-        "text": "<b>＜代表＞</b><br />ハードウェア, 未来工房, ARTiS<br /><b>＜副代表＞</b><br />FUNAI, FUGU, 天文部<br /><b>＜部員＞</b><br />Mariners' Conference, FUN3D, FUNCoder, SoundCreate, 上級生員会, GATT, 麻雀, FUN POKER, 卓球, (etrobo-fun）"
+        "circles": {
+            "position1": {
+                "position": "代表",
+                "cirlces": [{
+                        "name": "ハードウェアサークル",
+                        "twitter": "https://twitter.com/fun_hardware?s=20"
+                    },
+                    {
+                        "name": "未来工房",
+                        "twitter": "https://twitter.com/factory_mirai?s=20"
+                    }
+                ]
+            },
+            "position2": {
+                "position": "部員",
+                "cirlces": [{
+                        "name": "FUN GC",
+                        "twitter": "https://twitter.com/fugutwi?s=20"
+                    },
+                    {
+                        "name": "FUN AI",
+                        "twitter": "https://twitter.com/_FunAI_?s=20"
+                    },
+                    {
+                        "name": "ARTiS",
+                        "twitter": "https://twitter.com/ARTiS_CCC?s=20"
+                    },
+                    {
+                        "name": "FUNCoder",
+                        "twitter": "https://twitter.com/fun_coder?s=20"
+                    },
+                    {
+                        "name": "Mariners' Confarence",
+                        "twitter": "https://twitter.com/mariconf_fun?s=20"
+                    },
+                    {
+                        "name": "FUN 3D",
+                        "twitter": "https://twitter.com/FUN_3Dmodel?s=20"
+                    },
+                    {
+                        "name": "Sound Create",
+                        "twitter": "https://twitter.com/SoundCreateFUN?s=20"
+                    },
+                    {
+                        "name": "上級生委員会",
+                        "twitter": "https://twitter.com/FUN_SeniCL?s=20"
+                    },
+                    {
+                        "name": "天文部",
+                        "twitter": "https://twitter.com/FUN_Astronomy?s=20"
+                    },
+                    {
+                        "name": "GATT",
+                        "twitter": "https://twitter.com/GATT_hakodate?s=20"
+                    },
+                    {
+                        "name": "麻雀サークル",
+                        "twitter": "#"
+                    },
+                    {
+                        "name": "FUN POKER",
+                        "twitter": "https://twitter.com/FUNPOKER1135?s=20"
+                    },
+                    {
+                        "name": "卓球サークル",
+                        "twitter": "https://twitter.com/FUNtakkyu?s=20"
+                    },
+                    {
+                        "name": "(etrobo-fun)",
+                        "twitter": "https://twitter.com/etrobo_fun?s=20"
+                    }
+                ]
+            }
+        }
     },
     "skills": {
         "title": "Skills",
