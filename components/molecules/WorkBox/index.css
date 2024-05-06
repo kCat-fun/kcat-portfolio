@@ -4,6 +4,7 @@ a>* {
 }
 
 img {
+    object-fit: cover;
     height: 250px;
     border-radius: 5px;
 }
