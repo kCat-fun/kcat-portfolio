@@ -19,6 +19,7 @@ export default defineNuxtConfig({
             今までに作成した作品や書いてきたBlogのまとめなどを掲載しています。\
             ",
         },
+        { hid: 'og:image', property: 'og:image', content: 'https://portfolio.kcat.dev/_nuxt/iconCircle.23303de0.png' },
       ],
       link: [
         {
