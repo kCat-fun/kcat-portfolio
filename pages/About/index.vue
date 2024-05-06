@@ -21,7 +21,17 @@
                 <p v-html="jsonProfile.comment.text" />
             </IntroBox> -->
             <IntroBox :title=jsonProfile.circle.title class="introBoxs">
-                <p v-html="jsonProfile.circle.text" />
+                <p><b v-html="jsonProfile.circle.circles.position1.position" /></p>
+                <p><span v-for="(item, index) in jsonProfile.circle.circles.position1.cirlces">
+                    <a :href="item.twitter" class="link">{{ item.name }}</a>
+                    <span v-if="index != jsonProfile.circle.circles.position1.cirlces.length-1">, </span>
+                </span></p>
+                <br />
+                <p><b v-html="jsonProfile.circle.circles.position2.position" /></p>
+                <p><span v-for="(item, index) in jsonProfile.circle.circles.position2.cirlces">
+                    <a :href="item.twitter" class="link">{{ item.name }}</a>
+                    <span v-if="index != jsonProfile.circle.circles.position2.cirlces.length-1">, </span>
+                </span></p>
             </IntroBox>
             <IntroBox :title=jsonProfile.skills.title class="introBoxs">
                 <ul v-for="item in jsonProfile.skills.text">

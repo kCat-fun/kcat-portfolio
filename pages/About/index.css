@@ -104,3 +104,8 @@
         margin: auto;
     }
 }
+
+.link {
+    text-decoration: none;
+    color: rgb(31, 103, 170);
+}
