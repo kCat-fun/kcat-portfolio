@@ -46,9 +46,7 @@ div {
         word-wrap: break-word;
         text-wrap: wrap;
     }
-    /deep/ img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    /deep/ p:not(:first-child) {
+        margin-bottom: 10px;
     }
 }
