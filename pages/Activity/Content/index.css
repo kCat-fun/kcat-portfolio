@@ -42,7 +42,7 @@ div {
     /deep/ img {
         width: 100%;
     }
-    /deep/ * {
+    /deep/ a {
         word-wrap: break-word;
         text-wrap: wrap;
     }
