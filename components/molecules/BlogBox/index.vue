@@ -107,7 +107,7 @@ export default {
 
             var style = window.getComputedStyle(sample[0]);
             var fontsize = parseFloat(style.fontSize); //font-sizeを取得
-            var width = parseFloat(style.width); //widthを取得
+            let width = parseFloat(style.width); //widthを取得
             var letterSpacing = parseFloat(style.letterSpacing); //letter-spacingを取得
 
             width = window.innerWidth < 800 ? 300 * 0.95 : width;
@@ -139,7 +139,7 @@ export default {
             const sample = document.getElementsByClassName("synopsis");
             var style = window.getComputedStyle(sample[0]);
             var fontsize = parseFloat(style.fontSize); //font-sizeを取得
-            var width = parseFloat(style.width); //widthを取得
+            let width = parseFloat(style.width); //widthを取得
             var letterSpacing = parseFloat(style.letterSpacing); //letter-spacingを取得
 
             width = window.innerWidth < 800 ? 300 * 0.95 : width;

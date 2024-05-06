@@ -16,7 +16,7 @@ export default {
             blogs: "",
         }
     },
-    mounted() {
+    computed() {
         this.doGet();
     },
     methods: {
@@ -32,7 +32,7 @@ export default {
             ).then((response) => response.json())
                 .then((data) => {
                     this.blogs = data;
-                    // console.log(this.blogs);
+                    console.log(this.blogs);
                     for (let i = 0; i < this.blogs.length; i++) {
                         this.blogs[i].tag = this.blogs[i].tag.split(',');
                     }
