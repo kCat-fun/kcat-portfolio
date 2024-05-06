@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       title: "kCat's Portfolio",
       meta: [
         // <meta name="description" content="My amazing site.">
+        { hid: 'og:image', property: 'og:image', content: 'https://portfolio.kcat.dev/_nuxt/iconCircle.23303de0.png' },
         {
           name: "description",
           content:
@@ -19,7 +20,6 @@ export default defineNuxtConfig({
             今までに作成した作品や書いてきたBlogのまとめなどを掲載しています。\
             ",
         },
-        { hid: 'og:image', property: 'og:image', content: 'https://portfolio.kcat.dev/_nuxt/iconCircle.23303de0.png' },
       ],
       link: [
         {
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
           src: "https://platform.twitter.com/widgets.js",
           async: true,
           defer: true,
-          body: true,
+          // body: true,
         },
         {
           type: "text/javascript",
