@@ -3,7 +3,7 @@
         <PageTitle>Activity</PageTitle>
         <div>
             <WorkBox v-for="activity in activities.contents" class="WorkBox" @click="moveContent(activity.id)" :tag="activity.tag" :data="activity.data"
-                :imgPath="activity.image.url" altStr="タイトル画像">
+                :imgPath="activity.image.url" altStr="サムネイル">
                 {{ activity.title }}
             </WorkBox>
             <WorkBoxDammy class="WorkBox" />

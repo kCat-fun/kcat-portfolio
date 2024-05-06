@@ -42,4 +42,8 @@ div {
     /deep/ img {
         width: 100%;
     }
+    /deep/ * {
+        word-wrap: break-word;
+        text-wrap: wrap;
+    }
 }

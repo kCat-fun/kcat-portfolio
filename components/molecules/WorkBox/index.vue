@@ -1,7 +1,7 @@
 <template>
     <a href="#">
         <img :src=imgPath :alg=altStr>
-        <div>
+        <div class="content">
             <div class="info">
                 <div><span>{{ tag }}</span>|</div>
                 <div>{{ data }}</div>
