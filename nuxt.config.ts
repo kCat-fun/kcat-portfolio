@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       title: "kCat's Portfolio",
       meta: [
         // <meta name="description" content="My amazing site.">
-        { hid: 'og:image', property: 'og:image', content: 'https://portfolio.kcat.dev/_nuxt/iconCircle.23303de0.png' },
+        // { hid: 'og:image', property: 'og:image', content: 'https://portfolio.kcat.dev/_nuxt/iconCircle.23303de0.png' },
         {
           name: "description",
           content:
