@@ -10,7 +10,8 @@
 <script>
 export default {
     name: 'RecentPost',
-    data: () => {
+    data: () => {0
+        
         return {
             ctx: useRuntimeConfig().public,
             ids: [],
