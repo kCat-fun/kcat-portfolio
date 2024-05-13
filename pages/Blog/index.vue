@@ -1,8 +1,9 @@
 <template>
     <div class="Blog">
         <PageTitle>Blog</PageTitle>
-        <div class="BlogBlox" v-for="blog in articles" >
-            <BlogBox :title="blog.title" :tags='blog.tags' :date="blog.date" :synopsis="blog.context" :imgPath="blog.imageurl" :url="blog.blogurl" altStr="ブログ画像" />
+        <div class="BlogBlox" v-for="blog in articles">
+            <BlogBox :title="blog.title" :tags='blog.tags' :date="blog.date" :synopsis="blog.context"
+                :imgPath="blog.imageurl" :url="blog.blogurl" altStr="ブログ画像" />
         </div>
     </div>
 </template>
