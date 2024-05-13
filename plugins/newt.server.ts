@@ -1,4 +1,3 @@
-import fetchAdapter from "@vespaiach/axios-fetch-adapter";
 import { createClient } from "newt-client-js";
 
 export default defineNuxtPlugin(() => {
@@ -8,7 +7,6 @@ export default defineNuxtPlugin(() => {
     token: config.newt.cdnApiToken,
     // apiToken: config.newt.apiToken,
     apiType: "cdn",
-    adapter: fetchAdapter,
   });
   return {
     provide: {

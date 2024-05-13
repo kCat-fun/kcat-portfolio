@@ -19,7 +19,8 @@ const { data } = await useAsyncData('articles', async () => {
             select: ['_id', 'title', 'tags', 'date', 'context', 'imageurl', 'blogurl']
         }
     })
-})
+});
+console.log(data);
 const articles = data.value?.items
 console.log(articles);
 </script>
