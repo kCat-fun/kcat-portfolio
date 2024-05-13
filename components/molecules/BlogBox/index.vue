@@ -52,7 +52,7 @@ export default {
             required: true,
         },
         tags: {
-            type: Array,
+            type: Object,
             required: true,
         },
         date: {

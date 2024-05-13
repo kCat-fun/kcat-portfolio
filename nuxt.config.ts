@@ -1,4 +1,11 @@
-const { BASE_URL, API_KEY, BLOG_TOKEN, TWITTER_IDS } = process.env;
+const {
+  BASE_URL,
+  API_KEY,
+  BLOG_TOKEN,
+  TWITTER_IDS,
+  NUXT_NEWT_SPACE_UID,
+  NUXT_NEWT_CDN_API_TOKEN,
+} = process.env;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -58,6 +65,10 @@ export default defineNuxtConfig({
       apiKey: API_KEY,
       blogToken: BLOG_TOKEN,
       twitterIds: TWITTER_IDS,
+    },
+    newt: {
+      spaceUid: NUXT_NEWT_SPACE_UID,
+      cdnApiToken: NUXT_NEWT_CDN_API_TOKEN,
     },
   },
   css: [
