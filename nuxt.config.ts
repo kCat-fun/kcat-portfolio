@@ -5,6 +5,7 @@ const {
   TWITTER_IDS,
   NUXT_NEWT_SPACE_UID,
   NUXT_NEWT_CDN_API_TOKEN,
+  NUXT_NEWT_API_TOKEN,
 } = process.env;
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -69,6 +70,7 @@ export default defineNuxtConfig({
     newt: {
       spaceUid: NUXT_NEWT_SPACE_UID,
       cdnApiToken: NUXT_NEWT_CDN_API_TOKEN,
+      apiToken: NUXT_NEWT_API_TOKEN,
     },
   },
   css: [

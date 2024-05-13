@@ -5,6 +5,7 @@ export default defineNuxtPlugin(() => {
   const newtClient = createClient({
     spaceUid: config.newt.spaceUid,
     token: config.newt.cdnApiToken,
+    apiToken: config.newt.apiToken,
     apiType: "cdn",
   });
   return {
