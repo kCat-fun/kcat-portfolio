@@ -10,9 +10,16 @@ export default defineNuxtPlugin(() => {
     apiType: "cdn",
     adapter: fetchAdapter,
   });
+  const newtApiClient = createClient({
+    spaceUid: config.newt.spaceUid,
+    token: config.newt.apiToken,
+    apiType: "api",
+    adapter: fetchAdapter,
+  });
   return {
     provide: {
       newtClient,
+      newtApiClient,
     },
   };
 });
