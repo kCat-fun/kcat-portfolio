@@ -3,8 +3,8 @@ import { createClient } from "newt-client-js";
 export default defineNuxtPlugin(() => {
   const config = useRuntimeConfig();
   const newtClient = createClient({
-    spaceUid: config.newt.spaceUid,
-    token: config.newt.cdnApiToken,
+    spaceUid: useRuntimeConfig().public.spaceUid,
+    token: useRuntimeConfig().public.cdnApiToken,
     // apiToken: config.newt.apiToken,
     apiType: "cdn",
   });

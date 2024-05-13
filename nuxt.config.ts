@@ -21,8 +21,6 @@ export default defineNuxtConfig({
       apiKey: API_KEY,
       blogToken: BLOG_TOKEN,
       twitterIds: TWITTER_IDS,
-    },
-    newt: {
       spaceUid: NUXT_NEWT_SPACE_UID,
       cdnApiToken: NUXT_NEWT_CDN_API_TOKEN,
       apiToken: NUXT_NEWT_API_TOKEN,
