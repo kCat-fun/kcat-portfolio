@@ -9,19 +9,19 @@
     <div :class="[isClick ? 'menu-open' : 'menu-close', 'menu']" v-if="isClick" @click="isClick = false">
         <ul>
             <li>
-                <NuxtLink class="link" to="/">Top</NuxtLink>
+                <NuxtLink to="/"><span class="link">Top</span></NuxtLink>
             </li>
             <li>
-                <NuxtLink class="link" to="/About">About</NuxtLink>
+                <NuxtLink to="/About"><span class="link">About</span></NuxtLink>
             </li>
             <li>
-                <NuxtLink class="link" to="/Activity">Activity</NuxtLink>
+                <NuxtLink to="/Activity"><span class="link">Activity</span></NuxtLink>
             </li>
             <li>
-                <NuxtLink class="link" to="/Blog">Blog</NuxtLink>
+                <NuxtLink to="/Blog"><span class="link">Blog</span></NuxtLink>
             </li>
             <li>
-                <NuxtLink class="link" to="/Contact">Contact</NuxtLink>
+                <NuxtLink to="/Contact"><span class="link">Contact</span></NuxtLink>
             </li>
         </ul>
     </div>

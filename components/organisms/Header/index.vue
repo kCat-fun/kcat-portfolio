@@ -3,7 +3,7 @@
         <HeaderMargin />
         <header v-if="windowWidth < breakPoint">
             <MobileTitleAndLogo class="mobileTitleAndLogo" />
-            <HamburgerMenu class="hamburgerMenu" />
+            <HamburgerMenu />
         </header>
         <header v-else>
             <TitleAndLogo class="titleAndLogo" />
