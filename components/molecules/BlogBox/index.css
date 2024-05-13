@@ -112,7 +112,7 @@
 .title>p {
     font-size: 24px;
     font-weight: bold;
-    font-feature-settings: "fwid";
+    /* font-feature-settings: "fwid"; */
     text-wrap: wrap;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -121,7 +121,7 @@
 }
 
 .synopsis {
-    font-feature-settings: "fwid";
+    /* font-feature-settings: "fwid"; */
     text-wrap: wrap;
     display: -webkit-box;
     -webkit-box-orient: vertical;
