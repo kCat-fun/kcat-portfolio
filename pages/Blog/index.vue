@@ -22,7 +22,7 @@ const { data } = await useAsyncData('articles', async () => {
     })
 })
 const articles = data.value?.items
-// console.log(articles);
+console.log(articles);
 </script>
 
 <style scoped>
