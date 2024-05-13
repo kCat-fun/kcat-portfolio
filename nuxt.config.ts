@@ -1,3 +1,4 @@
+require('dotenv').config();
 const {
   BASE_URL,
   API_KEY,
@@ -11,6 +12,22 @@ const {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  typescript: {
+    strict: true,
+  },
+  runtimeConfig: {
+    public: {
+      baseURL: BASE_URL,
+      apiKey: API_KEY,
+      blogToken: BLOG_TOKEN,
+      twitterIds: TWITTER_IDS,
+    },
+    newt: {
+      spaceUid: NUXT_NEWT_SPACE_UID,
+      cdnApiToken: NUXT_NEWT_CDN_API_TOKEN,
+      apiToken: NUXT_NEWT_API_TOKEN,
+    },
+  },
   app: {
     head: {
       charset: "utf-16",
@@ -58,19 +75,6 @@ export default defineNuxtConfig({
         lang: "ja",
         prefix: "og: https://ogp.me/ns#",
       },
-    },
-  },
-  runtimeConfig: {
-    public: {
-      baseURL: BASE_URL,
-      apiKey: API_KEY,
-      blogToken: BLOG_TOKEN,
-      twitterIds: TWITTER_IDS,
-    },
-    newt: {
-      spaceUid: NUXT_NEWT_SPACE_UID,
-      cdnApiToken: NUXT_NEWT_CDN_API_TOKEN,
-      apiToken: NUXT_NEWT_API_TOKEN,
     },
   },
   css: [
