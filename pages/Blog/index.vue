@@ -1,7 +1,7 @@
 <template>
     <div class="Blog">
         <PageTitle>Blog</PageTitle>
-        <div class="BlogBlox" v-for="blog in articles">
+        <div class="BlogBlox" v-for="blog in articles" :key="blog._id">
             <BlogBox :title="blog.title" :tags='blog.tags' :date="blog.date" :synopsis="blog.context"
                 :imgPath="blog.imageurl" :url="blog.blogurl" altStr="ブログ画像" />
         </div>
@@ -21,9 +21,9 @@ const { data } = await useAsyncData('articles', async () => {
         }
     })
 });
-console.log(data);
-const articles = data.value?.items
-console.log(articles);
+// console.log(data);
+const articles = data.value?.items;
+// console.log(articles);
 </script>
 
 <style scoped>
