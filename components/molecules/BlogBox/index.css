@@ -94,6 +94,10 @@
     margin-left: 5px;
 }
 
+.date {
+    font-feature-settings: unset;
+}
+
 .title {
     font-weight: bold;
     display: -webkit-box;
@@ -101,6 +105,11 @@
     height: 35px;
     margin-top: 5px;
     font-size: 24px;
+    font-feature-settings: "fwid";
+}
+
+.synopsis {
+    font-feature-settings: "fwid";
 }
 
 ul {

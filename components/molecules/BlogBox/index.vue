@@ -26,7 +26,7 @@
                 <img :src="imgPath" :alt="altStr" />
             </div>
             <div class="content">
-                <Date>{{ date }}</Date>
+                <Date><span class="date">{{ date }}</span></Date>
                 <div class="title">
                     {{ titleStr }}
                 </div>
