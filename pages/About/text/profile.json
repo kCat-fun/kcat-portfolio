@@ -139,5 +139,13 @@
             "P検2級",
             "パソコンスピード認定試験1級"
         ]
+    },
+    "work": {
+        "title": "Work History",
+        "text": [{
+            "date": "2023/08-09",
+            "name": "三菱電機/MITSUBISHI ELECTRIC 職場実習型インターンシップ",
+            "url": "https://www.mitsubishielectric.co.jp/saiyo/graduates/event/index.html"
+        }]
     }
 }

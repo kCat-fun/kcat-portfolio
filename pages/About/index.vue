@@ -44,6 +44,14 @@
                     </li>
                 </ul>
             </IntroBox>
+            <IntroBox :title=jsonProfile.work.title class="introBoxs">
+                <ul v-for="item in jsonProfile.work.text">
+                    <li>
+                        <p v-html="item.date" />
+                        <p><a :href="item.url" class="link">{{ item.name }}</a></p>
+                    </li>
+                </ul>
+            </IntroBox>
         </div>
     </div>
 </template>

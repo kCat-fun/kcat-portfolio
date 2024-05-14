@@ -4,6 +4,7 @@
         <TopIntro />
         <!-- <HorizontalTopics class="horizon-topics">NEW CONTENTS</HorizontalTopics> -->
         <!-- <RecentPost class="horizon-topics">RECENT POST</RecentPost> -->
+        <Other />
         <MyLinks class="mylink-topics">Links</MyLinks>
     </div>
 </template>

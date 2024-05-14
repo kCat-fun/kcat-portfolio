@@ -1,0 +1,24 @@
+div {
+    margin-bottom: 50px;
+}
+
+p:first-child {
+    margin: 40px auto 30px auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+ul {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li>* {
+    color: #00a0ff;
+}

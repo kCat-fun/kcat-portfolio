@@ -23,9 +23,10 @@ const { data } = await useAsyncData('histories', async () => {
     })
 });
 const histories = data.value?.items;
-histories.sort((a, b) =>
-    (a.date).replace('年', '').replace('月', '') < (b.date).replace('年', '').replace('月', '') ? 1 : -1
-);
+if(histories !== undefined)
+    histories.sort((a, b) =>
+        (a.date).replace('年', '').replace('月', '') < (b.date).replace('年', '').replace('月', '') ? 1 : -1
+    );
 // console.log((histories[0].date).replace('年','').replace('月',''));
 </script>
 
