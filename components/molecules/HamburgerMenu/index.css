@@ -79,11 +79,11 @@
 }
 
 .cross-button>.bar:nth-child(1) {
-    transform: rotateZ(45deg) translateX(6px) translateY(6px);
+    transform: rotateZ(45deg) translateX(7px) translateY(5px);
 }
 
 .cross-button>.bar:nth-child(3) {
-    transform: rotateZ(-45deg) translateX(6px) translateY(-6px);
+    transform: rotateZ(-45deg) translateX(7px) translateY(-5px);
 }
 
 .menu-close {

@@ -1,0 +1,14 @@
+.History {
+    padding: 15px 20px;
+}
+
+.history-box {
+    margin: 10px 5px 10px 20px;
+}
+
+@media screen and (min-width: 900px) {
+    .history-box {
+        width: 850px;
+        margin: auto;
+    }
+}

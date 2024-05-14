@@ -1,0 +1,50 @@
+.history::before {
+    content: '';
+    position: absolute;
+    left: -13px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(54, 199, 54);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.date {
+    margin-left: 20px;
+}
+
+.history {
+    position: relative;
+    border-left: 3px rgb(100, 100, 100) solid;
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.context {
+    margin: 5px 20px;
+    /deep/ a {
+        color: #00a0ff;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .date {
+        height: 24px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .context {
+        /deep/ * {
+            font-size: 16px;
+        }
+    }
+}
