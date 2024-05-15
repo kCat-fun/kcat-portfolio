@@ -2,7 +2,8 @@
     <div>
         <p>- Other -</p>
         <ul>
-            <li><NuxtLink to="/History">history</NuxtLink></li>
+            <li><NuxtLink to="/History">History</NuxtLink></li>
+            <li><NuxtLink to="/Slide">Slide</NuxtLink></li>
         </ul>
     </div>
 </template>

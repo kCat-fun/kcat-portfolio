@@ -1,0 +1,14 @@
+h2 {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1f67aa;
+    text-decoration: none;
+}
+
+div {
+    /deep/ a {
+        color: #1f67aa;
+    }
+}
