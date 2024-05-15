@@ -2,10 +2,12 @@
     <div>
         <PageTitle>Activity</PageTitle>
         <div>
-            <WorkBox v-for="activity in activities.contents" class="WorkBox" @click="moveContent(activity.id)" :tag="activity.tag" :data="activity.data"
-                :imgPath="activity.image.url" altStr="サムネイル">
-                {{ activity.title }}
-            </WorkBox>
+            <nuxt-link v-for="activity in activities.contents" :to="'/Activity/Content?id='+activity.id">
+                <WorkBox class="WorkBox"
+                    :tag="activity.tag" :data="activity.data" :imgPath="activity.image.url" altStr="サムネイル">
+                    {{ activity.title }}
+                </WorkBox>
+            </nuxt-link>
             <WorkBoxDammy class="WorkBox" />
             <WorkBoxDammy class="WorkBox" />
             <WorkBoxDammy class="WorkBox" />
@@ -34,11 +36,6 @@ export default {
                 this.activities = json;
             });
     },
-    methods: {
-        moveContent(prop) {
-            this.$router.push({ path: '/Activity/Content' , query :{ id: prop}});
-        }
-    }
 }
 </script>
 
