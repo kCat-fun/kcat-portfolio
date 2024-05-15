@@ -2,11 +2,13 @@
     <div>
         <PageTitle>Activity</PageTitle>
         <div>
-            <nuxt-link v-for="activity in activities.contents" :to="'/Activity/Content?id='+activity.id">
-                <WorkBox class="WorkBox"
-                    :tag="activity.tag" :data="activity.data" :imgPath="activity.image.url" altStr="サムネイル">
-                    {{ activity.title }}
-                </WorkBox>
+            <nuxt-link v-for="activity in activities.contents" :to="'/Activity/Content?id=' + activity.id">
+                <div>
+                    <WorkBox class="WorkBox" :tag="activity.tag" :data="activity.data" :imgPath="activity.image.url"
+                        altStr="サムネイル">
+                        {{ activity.title }}
+                    </WorkBox>
+                </div>
             </nuxt-link>
             <WorkBoxDammy class="WorkBox" />
             <WorkBoxDammy class="WorkBox" />
