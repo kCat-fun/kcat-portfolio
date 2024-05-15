@@ -10,3 +10,7 @@ div {
 .WorkBox {
     margin: 25px;
 }
+
+.work-box-link {
+    text-decoration: none;
+}
