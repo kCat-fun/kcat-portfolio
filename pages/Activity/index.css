@@ -33,6 +33,7 @@ div {
     width: 135px;
     display: flex;
     justify-content: space-around;
+    margin: 10px auto 20px auto;
 }
 
 .button-area>span {

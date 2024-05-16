@@ -17,8 +17,9 @@
         </div>
         <div class="button-area">
             <button @click="getCMS(Math.max(0, --pageNum))" :class="pageNum > 0 ? '' : 'fade'"><</button>
-            <span>{{ pageNum+1 }}/{{ Math.floor(totalCount / limit)+1 }}</span>
-            <button @click="getCMS(Math.min(++pageNum, Math.floor(totalCount / limit)))" :class="pageNum < Math.floor(totalCount / limit) ? '' : 'fade'">></button>
+                    <span>{{ pageNum + 1 }}/{{ Math.floor(totalCount / limit) + 1 }}</span>
+                    <button @click="getCMS(Math.min(++pageNum, Math.floor(totalCount / limit)))"
+                        :class="pageNum < Math.floor(totalCount / limit) ? '' : 'fade'">></button>
         </div>
     </div>
 </template>
@@ -53,6 +54,12 @@ export default {
                     this.activities = json;
                     this.totalCount = json.totalCount;
                 });
+            this.returnTop();
+        },
+        returnTop() {
+            window.scrollTo({
+                top: 0,
+            })
         }
     }
 }
