@@ -44,10 +44,20 @@ div {
     background-color: rgb(226, 226, 226);
     border: 1px gray solid;
     width: 30px;
-    height: 30px;
     border-radius: 50%;
+    text-align: center;
+}
+
+.view {
+    height: 30px;
+    opacity: 1;
+}
+
+.view:hover {
+    cursor: pointer;
 }
 
 .fade {
     opacity: 0;
+    height: 0;
 }

@@ -2,7 +2,7 @@
     <div>
         <PageTitle>Activity</PageTitle>
         <div>
-            <nuxt-link v-for="activity in activities.contents" :to="'/Activity/Content?id=' + activity.id"
+            <nuxt-link v-for="(activity, i) in activities.contents" :to="'/Activity/Content?id=' + activity.id + '&n=' + (pageNum*limit+i)"
                 class="work-box-link">
                 <div>
                     <WorkBox class="WorkBox" :tag="activity.tag" :data="activity.data" :imgPath="activity.image.url"
@@ -16,10 +16,9 @@
             <WorkBoxDammy class="WorkBox dammy" />
         </div>
         <div class="button-area">
-            <button @click="getCMS(Math.max(0, --pageNum))" :class="pageNum > 0 ? '' : 'fade'"><</button>
-                    <span>{{ pageNum + 1 }}/{{ Math.floor(totalCount / limit) + 1 }}</span>
-                    <button @click="getCMS(Math.min(++pageNum, Math.floor(totalCount / limit)))"
-                        :class="pageNum < Math.floor(totalCount / limit) ? '' : 'fade'">></button>
+            <button @click="getCMS(Math.max(0, --pageNum))" :class="pageNum > 0 ? 'view' : 'fade'"><</button>
+            <span>{{ pageNum + 1 }}/{{ Math.floor(totalCount / limit) + 1 }}</span>
+            <button @click="getCMS(Math.min(++pageNum, Math.floor(totalCount / limit)))" :class="pageNum < Math.floor(totalCount / limit) ? 'view' : 'fade'">></button>
         </div>
     </div>
 </template>
@@ -33,7 +32,7 @@ export default {
             activities: {},
             pageNum: 0,
             totalCount: 0,
-            limit: 8,
+            limit: 10,
         }
     },
     mounted() {

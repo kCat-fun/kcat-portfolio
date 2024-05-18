@@ -14,8 +14,9 @@ export default {
         }
     },
     mounted() {
+        const n = this.$route.query.n;
         // console.log(this.ctx);
-        fetch(this.ctx.baseURL, {
+        fetch(this.ctx.baseURL + "?limit=" + 1 + "&offset=" + n, {
             headers: {
                 "X-MICROCMS-API-KEY": this.ctx.apiKey
             }
