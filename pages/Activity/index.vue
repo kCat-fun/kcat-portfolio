@@ -1,7 +1,7 @@
 <template>
     <div>
         <PageTitle>Activity</PageTitle>
-        <div>
+        <div class="activities-area">
             <nuxt-link v-for="(activity, i) in activities.contents" :to="'/Activity/Content?id=' + activity.id + '&n=' + (pageNum*limit+i)"
                 class="work-box-link">
                 <div>
@@ -11,9 +11,9 @@
                     </WorkBox>
                 </div>
             </nuxt-link>
-            <WorkBoxDammy class="WorkBox dammy" />
-            <WorkBoxDammy class="WorkBox dammy" />
-            <WorkBoxDammy class="WorkBox dammy" />
+            <WorkBoxDammy class="dammy" />
+            <WorkBoxDammy class="dammy" />
+            <WorkBoxDammy class="dammy" />
         </div>
         <div class="button-area">
             <button @click="getCMS(Math.max(0, --pageNum))" :class="pageNum > 0 ? 'view' : 'fade'"><</button>

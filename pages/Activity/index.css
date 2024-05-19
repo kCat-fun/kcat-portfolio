@@ -1,13 +1,13 @@
-div {
+.activities-area {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 1400px;
     /* max-width: 1280px; */
     margin: auto;
 }
 
-.WorkBox {
+.work-box-link {
     margin: 25px;
 }
 
@@ -16,6 +16,7 @@ div {
 }
 
 .dammy {
+    height: 0;
     margin: 0 25px;
 }
 
