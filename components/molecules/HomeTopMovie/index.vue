@@ -13,7 +13,7 @@
                 -->
                 <source src="@/assets/movie/kcat-icon-animation.mp4" type="video/mp4">
                 <p>動画を再生できる環境ではありません。</p>
-                </video>
+            </video>
         </div>
     </div>
 </template>

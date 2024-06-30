@@ -32,7 +32,7 @@ export default {
             activities: {},
             pageNum: 0,
             totalCount: 0,
-            limit: 10,
+            limit: 12,
         }
     },
     mounted() {
