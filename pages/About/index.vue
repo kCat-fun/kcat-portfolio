@@ -48,7 +48,7 @@
                 <ul v-for="item in jsonProfile.work.text">
                     <li>
                         <p v-html="item.date" />
-                        <p><a :href="item.url" class="link">{{ item.name }}</a></p>
+                        <p><a :href="item.url" v-html="item.name" class="link"></a></p>
                     </li>
                 </ul>
             </IntroBox>
