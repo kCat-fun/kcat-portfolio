@@ -16,11 +16,12 @@ import type { Slide } from '~/types/slide'
 
 const { data } = await useAsyncData('slides', async () => {
     const { $newtClient } = useNuxtApp()
-    return await $newtClient.getContents<History>({
+    return await $newtClient.getContents<Slide>({
         appUid: 'history',
         modelUid: 'slide',
         query: {
-            select: ['_id', 'slidename', 'url', 'context']
+            select: ['_id', 'slidename', 'url', 'context'],
+            order: ['_sys.customOrder']
         }
     })
 });

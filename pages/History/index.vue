@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { History } from '~/types/history'
+import type { History } from '~/types/hisotry'
 
 const { data } = await useAsyncData('histories', async () => {
     const { $newtClient } = useNuxtApp()
@@ -18,7 +18,8 @@ const { data } = await useAsyncData('histories', async () => {
         appUid: 'history',
         modelUid: 'history',
         query: {
-            select: ['_id', 'title', 'date', 'content']
+            select: ['_id', 'title', 'date', 'content'],
+            order: ['_sys.customOrder']
         }
     })
 });
