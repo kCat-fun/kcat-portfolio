@@ -25,7 +25,7 @@ const { data } = await useAsyncData('slides', async () => {
         }
     })
 });
-const slides = data.value?.items;
+const slides = data.value?.items.reverse();
 console.log(slides);
 </script>
 
