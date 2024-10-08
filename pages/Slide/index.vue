@@ -2,7 +2,7 @@
     <div class="Slide">
         <PageTitle>スライド置き場</PageTitle>
         <ul class="slide-area">
-            <li v-for="slide in slides">
+            <li v-for="slide in (slides != undefined ? slides.reverse() : [])">
                 <client-only>
                     <SlideBox :url="slide.url" :context="slide.context">{{ slide.slidename }}</SlideBox>
                 </client-only>
@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts" setup>
-const slides = ref<Slide[]>([]);
-
 import type { Slide } from '~/types/slide'
+
+const slides = ref<Slide[]>([]);
 
 const { data } = await useAsyncData('slides', async () => {
     const { $newtClient } = useNuxtApp()
@@ -27,9 +27,9 @@ const { data } = await useAsyncData('slides', async () => {
         }
     })
 });
-
-if(data.value?.items !== undefined)
-    slides.value = (data.value?.items).reverse();
+if (data.value?.items != undefined) {
+    slides.value = (data.value?.items);
+}
 // console.log(slides);
 </script>
 
