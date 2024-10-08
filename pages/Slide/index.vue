@@ -12,6 +12,8 @@
 </template>
 
 <script lang="ts" setup>
+const slides = ref<Slide[]>([]);
+
 import type { Slide } from '~/types/slide'
 
 const { data } = await useAsyncData('slides', async () => {
@@ -25,8 +27,10 @@ const { data } = await useAsyncData('slides', async () => {
         }
     })
 });
-const slides = data.value?.items.reverse();
-console.log(slides);
+
+if(data.value?.items !== undefined)
+    slides.value = (data.value?.items).reverse();
+// console.log(slides);
 </script>
 
 <style scoped>
