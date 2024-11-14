@@ -2,7 +2,7 @@
     <div>
         <PageTitle>Activity</PageTitle>
         <div class="activities-area">
-            <nuxt-link v-for="(activity, i) in activities.contents" :to="'/Activity/Content?id=' + activity.id + '&n=' + (pageNum*limit+i)"
+            <nuxt-link v-for="(activity, i) in activities.contents" :to="'/Activity/Content?id=' + activity.id"
                 class="work-box-link">
                 <div>
                     <WorkBox class="WorkBox" :tag="activity.tag" :data="activity.data" :imgPath="activity.image.url"

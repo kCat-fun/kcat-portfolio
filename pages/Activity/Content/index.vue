@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
     name: "Content",
     data: () => {
@@ -13,24 +13,23 @@ export default {
             activitie: {},
         }
     },
-    mounted() {
-        const n = this.$route.query.n;
-        // console.log(this.ctx);
-        fetch(this.ctx.baseURL + "?limit=" + 1 + "&offset=" + n, {
-            headers: {
-                "X-MICROCMS-API-KEY": this.ctx.apiKey
-            }
-        }).then(res => res.json())
-            .then(json => {
-                for(let item of json.contents) {
-                    // console.log(item.id, this.$route.query.id);
-                    if(item.id == this.$route.query.id) {
-                        this.activitie = item;
-                        // console.log(this.activitie);
-                        break;
-                    }
-                }
+    async mounted() {
+        try {
+            const response = await fetch((this.ctx.baseURL + "?ids=" + this.$route.query.id), {
+                headers: {
+                    "X-MICROCMS-API-KEY": this.ctx.apiKey,
+                    "Content-Type": "application/json",
+                },
             });
+            const data = await response.json();
+            // console.log(data);
+            this.activitie = data.contents[0];
+            if (!this.activitie) {
+                throw new Error("Activity not found");
+            }
+        } catch (error) {
+            console.error('Failed to fetch Activity:', error);
+        }
     },
 }
 </script>
