@@ -48,6 +48,9 @@ div {
         text-wrap: wrap;
     }
     /deep/ p:not(:first-child) {
-        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    /deep/ li {
+        margin-left: 25px;
     }
 }
