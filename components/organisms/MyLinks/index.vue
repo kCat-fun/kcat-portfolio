@@ -3,22 +3,28 @@
         <p>- <slot></slot> -</p>
         <div class="links-area" :style="getBreakPoint">
             <div>
-                <ImgLink class="links-box" link="https://twitter.com/kcat_fun/">
-                    <img style="border-radius: 50%;"
-                        src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?w=740&t=st=1698399850~exp=1698400450~hmac=3ed0bc10cf2cbaf6500182a17f4e4d48058ff742da8bd902b8fe8edcfabd2324"
-                        alt="youtube">
+                <ImgLink class="links-box" link="https://x.com/kcat_fun/"
+                    style="border-radius: 50%; background-color: black;">
+                    <div style="width: 60%; height: 60%; margin: auto;">
+                        <img style="filter: invert(100%); width: 100%;" src="~/assets/image/x-twitter-brands-solid.svg"
+                            alt="youtube">
+                    </div>
                 </ImgLink>
             </div>
             <div>
                 <ImgLink class="links-box" link="https://www.youtube.com/@kCat-fun/featured">
-                    <img src="https://cdn.icon-icons.com/icons2/622/PNG/512/youtube-play-button_icon-icons.com_57042.png"
-                        alt="youtube">
+                    <div style="width: 100%; height: 100%; margin: auto;">
+                        <img style="width: 100%;" src="~/assets/image/youtube-brands-solid.svg"
+                            alt="youtube">
+                    </div>
                 </ImgLink>
             </div>
             <div>
                 <ImgLink class="links-box" link="https://github.com/kCat-fun">
-                    <img src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png"
-                        alt="youtube">
+                    <div style="width: 100%; height: 100%; margin: auto;">
+                        <img style="width: 100%;" src="~/assets/image/github-brands-solid.svg"
+                            alt="youtube">
+                    </div>
                 </ImgLink>
             </div>
         </div>
