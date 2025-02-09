@@ -17,8 +17,8 @@
         </div>
         <div class="button-area">
             <button @click="getCMS(Math.max(0, --pageNum))" :class="pageNum > 0 ? 'view' : 'fade'"><</button>
-            <span>{{ pageNum + 1 }}/{{ Math.floor(totalCount / limit) + 1 }}</span>
-            <button @click="getCMS(Math.min(++pageNum, Math.floor(totalCount / limit)))" :class="pageNum < Math.floor(totalCount / limit) ? 'view' : 'fade'">></button>
+            <span>{{ pageNum + 1 }}/{{ Math.floor(totalCount-1 / limit) + 1 }}</span>
+            <button @click="getCMS(Math.min(++pageNum, Math.floor(totalCount-1 / limit)))" :class="pageNum < Math.floor(totalCount-1 / limit) ? 'view' : 'fade'">></button>
         </div>
     </div>
 </template>
