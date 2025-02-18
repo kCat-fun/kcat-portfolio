@@ -3,11 +3,10 @@
         <p>- <slot></slot> -</p>
         <div class="links-area" :style="getBreakPoint">
             <div>
-                <ImgLink class="links-box" link="https://x.com/kcat_fun/"
-                    style="border-radius: 50%; background-color: black;">
-                    <div style="width: 60%; height: 60%; margin: auto;">
-                        <img style="filter: invert(100%); width: 100%;" src="~/assets/image/x-twitter-brands-solid.svg"
-                            alt="youtube">
+                <ImgLink class="links-box" link="https://x.com/kcat_fun/">
+                    <div style="width: 90%; height: 90%; margin: auto;">
+                        <img style="width: 120%;" src="~/assets/image/x-twitter-brands-solid.svg"
+                            alt="x">
                     </div>
                 </ImgLink>
             </div>
@@ -23,7 +22,7 @@
                 <ImgLink class="links-box" link="https://github.com/kCat-fun">
                     <div style="width: 100%; height: 100%; margin: auto;">
                         <img style="width: 100%;" src="~/assets/image/github-brands-solid.svg"
-                            alt="youtube">
+                            alt="github">
                     </div>
                 </ImgLink>
             </div>
