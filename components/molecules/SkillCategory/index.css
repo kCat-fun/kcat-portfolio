@@ -1,0 +1,33 @@
+.skill-category {
+    margin: 25px auto 15px 0;
+}
+
+.category {
+    position: relative;
+    height: 20px;
+    line-height: 24px;
+    padding-left: 30px;
+    font-weight: bold;
+    margin: 25px auto 10px 0;
+}
+
+.category::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #438eae;
+    border-radius: 2px;
+    transform: rotateZ(45deg);
+}
+
+.skills {
+    margin-left: 8px;
+}
+
+.skill {
+    margin: 10px 0;
+}

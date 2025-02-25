@@ -31,11 +31,8 @@
                 </span></p>
             </IntroBox>
             <IntroBox :title=jsonProfile.skills.title class="introBoxs">
-                <ul v-for="item in jsonProfile.skills.text">
-                    <li>
-                        <p v-html="item" />
-                    </li>
-                </ul>
+                <SkillsIntro />
+                <SkillCategory v-for="item in jsonProfile.skills.content" :key="item.category" :category="item.category" :skills="item.skills" />
             </IntroBox>
             <IntroBox :title=jsonProfile.license.title class="introBoxs">
                 <ul v-for="item in jsonProfile.license.text">
