@@ -176,11 +176,15 @@
                 "skills": [
                     {
                         "text": "Arduino Language",
-                        "level": "4"
+                        "level": "5"
                     },
                     {
                         "text": "LEGO MINDSTORMS EV3",
-                        "level": "4"
+                        "level": "5"
+                    },
+                    {
+                        "text": "EV3RT",
+                        "level": "5"
                     },
                     {
                         "text": "SPIKE (レゴ® エデュケーション)",
@@ -189,6 +193,14 @@
                     {
                         "text": "Robot C",
                         "level": "3"
+                    },
+                    {
+                        "text": "VEX Robotics VEX GO",
+                        "level": "5"
+                    },
+                    {
+                        "text": "VEX Robotics VEX IQ",
+                        "level": "5"
                     },
                     {
                         "text": "CAD/Fusion360",
@@ -275,6 +287,11 @@
     "work": {
         "title": "Work History",
         "text": [
+            {
+                "date": "2023/04-2025/03",
+                "name": "<span>函館市こどもロボットプログラミング講座<wbr>(ロボラボ函館)アルバイト/<wbr>指導スタッフ・教材作成</span>",
+                "url": "https://sites.google.com/view/hakodate-robot/index"
+            },
             {
                 "date": "2024/08-09",
                 "name": "<span>株式会社 Piezo Sonic<wbr>（ピエゾ ソニック）/<wbr>技術・開発部 インターン</span>",
