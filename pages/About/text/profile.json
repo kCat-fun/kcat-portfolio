@@ -37,19 +37,21 @@
         "circles": {
             "position1": {
                 "position": "代表",
-                "cirlces": [{
+                "cirlces": [
+                ]
+            },
+            "position2": {
+                "position": "部員",
+                "cirlces": [
+                    {
                         "name": "ハードウェアサークル",
                         "twitter": "https://twitter.com/fun_hardware?s=20"
                     },
                     {
                         "name": "未来工房",
                         "twitter": "https://twitter.com/factory_mirai?s=20"
-                    }
-                ]
-            },
-            "position2": {
-                "position": "部員",
-                "cirlces": [{
+                    },
+                    {
                         "name": "FUN GC",
                         "twitter": "https://twitter.com/fugutwi?s=20"
                     },
