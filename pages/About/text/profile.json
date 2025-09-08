@@ -294,6 +294,11 @@
         "title": "Work History",
         "text": [
             {
+                "date": "2025/02",
+                "name": "<span>株式会社Doog/<wbr>開発インターンシップ</span>",
+                "url": "https://doog-inc.com/"
+            },
+            {
                 "date": "2023/07-2025/03",
                 "name": "<span>函館市こどもロボットプログラミング講座<wbr>(ロボラボ函館)アルバイト/<wbr>指導スタッフ・教材作成</span>",
                 "url": "https://sites.google.com/view/hakodate-robot/index"
