@@ -18,13 +18,6 @@
         </div>
         <div class="introductions">
             <IntroBox :title=jsonProfile.circle.title class="introBoxs">
-                <p><b v-html="jsonProfile.circle.circles.position1.position" /></p>
-                <p><span v-for="(item, index) in jsonProfile.circle.circles.position1.cirlces">
-                    <a :href="item.twitter" class="link" target="_blank">{{ item.name }}</a>
-                    <span v-if="index != jsonProfile.circle.circles.position1.cirlces.length-1">, </span>
-                </span></p>
-                <br />
-                <p><b v-html="jsonProfile.circle.circles.position2.position" /></p>
                 <p><span v-for="(item, index) in jsonProfile.circle.circles.position2.cirlces">
                     <a :href="item.twitter" class="link" target="_blank">{{ item.name }}</a>
                     <span v-if="index != jsonProfile.circle.circles.position2.cirlces.length-1">, </span>
